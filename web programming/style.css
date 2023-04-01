@@ -1,0 +1,887 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Header Styles */
+   .yellow {
+      background-color: yellow;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .green {
+      background-color: green;
+    }
+    .orange {
+      background-color: orange;
+    }
+    .red {
+      background-color: red;
+    }
+header {
+	background-color: #ffffff;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+#main{
+
+	position: fixed;
+	top: 120;
+	right: 300;
+	height: 150px;
+	width: 200px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.logo {
+	color: #546ee1;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.main-nav {
+	display: flex;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.main-nav li {
+	margin: 0 10px;
+}
+
+.main-nav a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.user-profile {
+	display: flex;
+	align-items: center;
+}
+
+.user-profile img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.username {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Side Navigation Bar Styles */
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	background-color: #f5f5f5;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #000000;
+	display: block;
+}
+
+.sidenav a:hover {
+	color:  #4CAF50;
+	background-color: #c7e876;
+}
+
+.main {
+	margin-left: 200px; 
+	padding: 100px 10px 10px;
+}
+
+@media screen and (max-width: 768px) {
+.header-container {
+flex-direction: column;
+align-items: flex-start;
+}
+.main-nav {
+	margin-top: 10px;
+}
+
+.sidenav {
+	width: 100%;
+	height: auto;
+	top: 100px;
+}
+
+.main {
+	margin: 0;
+	padding: 50px 10px 10px;
+}
+{
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: rgb(241, 244, 255);
+      }
+      #head {
+        background-color: rgb(1, 81, 134);
+
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #logo {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+      }
+      #head li {
+        list-style-type: none;
+        float: left;
+        margin-right: 20px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+      #head form a {
+        text-decoration: none;
+        color: rgb(216, 237, 255);
+      }
+      #head form li input[type="submit"] {
+        background-color: rgb(2, 112, 155);
+        color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(0, 22, 146);
+        padding: 2px 5px 2px 5px;
+      }
+      #head form li input[type="password"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #head form li input[type="text"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #head form li input[type="submit"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      #forms {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        padding: 0 20px 0 20px;
+      }
+      #left {
+        padding-top: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #textleft {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+      }
+
+      #inf {
+        margin-top: 60px;
+
+        font-size: 18px;
+      }
+      #inf b {
+        color: black;
+      }
+      #inf span {
+        color: rgb(124, 124, 124);
+      }
+      #right {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 50px;
+        padding-left: 300px;
+      }
+      #signup b {
+        font-size: 30px;
+      }
+      #infos {
+        margin-top: 30px;
+      }
+      #infos li {
+        list-style: none;
+        padding-bottom: 15px;
+      }
+      #infos input {
+        height: 40px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border-color: rgb(146, 146, 146);
+        border-style: solid;
+        font-size: 15px;
+      }
+      #infos input[type="text"] {
+        width: 25%;
+      }
+      #infos input[id="emai"] {
+        width: 52.5%;
+      }
+      #infos input[id="pass"] {
+        width: 52.5%;
+      }
+      #birth li {
+        list-style: none;
+        margin-top: 5px;
+      }
+      #genders {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      #genders span {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      #terms {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        list-style: none;
+        margin-top: 5px;
+      }
+      #create {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      #sign:hover {
+        cursor: grab;
+      }
+      #sign {
+        margin-top: 30px;
+        list-style: none;
+      }
+      #sign input[id="sub"] {
+        width: 230px;
+        height: 50px;
+        font-size: 20px;
+        padding: 0 10px 0 10px;
+        border-radius: 7px;
+        border-style: solid;
+        border-color: rgb(114, 114, 114);
+        background-color: rgb(36, 143, 3);
+        color: white;
+      }
+      #birth input[type="date"] {
+        height: 25px;
+      }
+      #birth a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+        font-size: 12px;
+      }
+      #terms a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+      }
+      #terms {
+        font-size: 12px;
+      }
+      #create a {
+        text-decoration: none;
+        color: rgb(18, 95, 197);
+      }
+
+       #brace {
+        width: 1540px;
+        height: 500px;
+        position: absolute;
+        top: 100px;
+        left: 60px;
+        border: solid #000000;
+      }
+      #layer {
+        background-color: rgb(222, 224, 177);
+        width: 1900px;
+        height: 40px;
+        left: -50px;
+        position: absolute;
+        border: solid #000000;
+        z-index: 6;
+     
+      }
+      #layer2 {
+        background-color: rgb(222, 224, 177);
+        width: 1550px;
+        height: 40px;
+        top: 150px;
+        position: absolute;
+        border: solid #000000;
+        z-index: 4;
+     
+      }
+      #layer3 {
+        background-color: rgb(222, 224, 177);
+        width: 1550px;
+        height: 40px;
+        top: 300px;
+        position: absolute;
+        border: solid #000000;
+        z-index: 4;
+     
+      }
+       #layer4 {
+        background-color: rgb(222, 224, 177);
+        width: 740px;
+        height: 50px;
+        bottom: 0px;
+        position: absolute;
+        border: solid #000000;
+        z-index: 4;
+     
+      }
+       #layer5 {
+        background-color: rgb(222, 224, 177);
+        width: 380px;
+        height: 50px;
+        bottom: 0px;
+        right: 0px;
+        position: absolute;
+        border: solid #000000;
+        z-index: 4;
+     
+      }
+        #vertical {
+        width: 40px;
+        height: 495px;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        border: solid #000000;
+        bottom: 1px;
+        
+      }
+      #vertical2 {
+        width: 40px;
+        height: 495px;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        border: solid #000000;
+        left: 200px;
+        bottom: 1px;
+      }
+      #vertical3 {
+        width: 40px;
+        height: 495px;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        border: solid #000000;
+        left: 400px;
+        bottom: 1px;
+      }
+      #vertical4 {
+        width: 40px;
+        height: 495px;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        border: solid #000000;
+        left: 600px;
+        bottom: 1px;
+      }
+        #vertical5 {
+        width: 40px;
+        height: 495px;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        border: solid #000000;
+        left: 1320px;
+        bottom: 1px;
+      }
+
+
+        #center {
+        width: 350px;
+        height: 520px;
+        border: solid #000000;
+        background-color: rgb(222, 224, 177);
+        position: absolute;
+        bottom: -5px;
+        left: 800px;
+        z-index: 10;
+      }
+      #entrance {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 0px;
+        width: 200px;
+        height: 155px;
+        left: 70px;
+      }
+      #window {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 210px;
+        width: 200px;
+        height: 250px;
+        left: 70px;
+      }
+      #right {
+        border: solid #000000;
+        background-color: rgb(155, 116, 116);
+        position: absolute;
+
+        width: 300px;
+        height: 460px;
+        right: -305px;
+        bottom: -5px;
+        z-index: 4;
+      }
+        #door {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 25px;
+        height: 80px;
+        left: 42px;
+      }
+        #door1 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 10px;
+        height: 80px;
+        left: 388px;
+      }
+        #door2 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 10px;
+        height: 80px;
+        left: 442px;
+      }
+        #door3 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 25px;
+        height: 80px;
+        left: 773px;
+      }
+        #door4 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 25px;
+        height: 80px;
+        left: 1152px;
+      }
+        #door5 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 350px;
+        width: 25px;
+        height: 80px;
+        left: 1511px;
+      }
+        #door6 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 25px;
+        height: 80px;
+        left: 42px;
+      }
+        #door7 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 10px;
+        height: 80px;
+        left: 388px;
+      }
+        #door8 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 10px;
+        height: 80px;
+        left: 442px;
+      }
+        #door9 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 25px;
+        height: 80px;
+        left: 773px;
+      }
+        #door10 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 25px;
+        height: 80px;
+        left: 1152px;
+      }
+        #door11 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 200px;
+        width: 25px;
+        height: 80px;
+        left: 1511px;
+      }
+        #door12 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 50px;
+        width: 25px;
+        height: 80px;
+        left: 42px;
+      }
+        #door13 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 50px;
+        width: 10px;
+        height: 80px;
+        left: 388px;
+      }
+        #door14 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 50px;
+        width: 10px;
+        height: 80px;
+        left: 442px;
+      }
+        #door15 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 0px;
+        width: 25px;
+        height: 130px;
+        left: 773px;
+      }
+        #door16 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 50px;
+        width: 25px;
+        height: 80px;
+        left: 1152px;
+      }
+        #door17 {
+        border: solid #000000;
+        background-color: rgb(100, 96, 98);
+        position: absolute;
+        bottom: 50px;
+        width: 25px;
+        height: 80px;
+        left: 1511px;
+      }
+        #win {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 115px;
+      }
+        #win1 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 245px;
+      }
+        #win2 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 515px;
+      }
+        #win3 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 645px;
+      }
+        #win4 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 1235px;
+      }
+        #win5 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 390px;
+        width: 80px;
+        height: 40px;
+        left: 1365px;
+      }
+        #win6 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 115px;
+      }
+        #win7 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 245px;
+      }
+        #win8 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 515px;
+      }
+        #win9 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 645px;
+      }
+        #win10 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 1235px;
+      }
+        #win11{
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 240px;
+        width: 80px;
+        height: 40px;
+        left: 1365px;
+      }
+      #win12 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 115px;
+      }
+      #win13 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 245px;
+      }
+        #win14{
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 515px;
+      }
+        #win15{
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 645px;
+      }
+        #win16 {
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 1235px;
+      }
+        #win17{
+        border: solid #000000;
+        background-color: rgb(212, 225, 236);
+        position: absolute;
+        bottom: 90px;
+        width: 80px;
+        height: 40px;
+        left: 1365px;
+      }
+        #ladder {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 5px;
+        width: 80px;
+        height: 15px;
+        left: 115px;
+      }
+        #ladder1 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 25px;
+        width: 75px;
+        height: 15px;
+        left: 120px;
+      }
+        #ladder2 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 45px;
+        width: 70px;
+        height: 15px;
+        left: 125px;
+      }
+        #ladder3 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 65px;
+        width: 65px;
+        height: 15px;
+        left: 130px;
+      }
+        #ladder4 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 75px;
+        width: 120px;
+        height: 15px;
+        left: 1px;
+      }
+        #ladder5 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 90px;
+        width: 120px;
+        height: 15px;
+        left: 1px;
+      }
+        #ladder6 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 105px;
+        width: 120px;
+        height: 15px;
+        left: 1px;
+      }
+        #ladder7 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 120px;
+        width: 120px;
+        height: 15px;
+        left: 1px;
+      }
+        #ladder8 {
+        border: solid #000000;
+        background-color: white;
+        position: absolute;
+        bottom: 135px;
+        width: 120px;
+        height: 15px;
+        left: 1px;
+      }
+        #text {
+        text-align: center;
+        position: absolute;
+        bottom: 160px;
+        left: 105px;
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: none;
+      }
